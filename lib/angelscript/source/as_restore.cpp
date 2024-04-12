@@ -44,7 +44,7 @@
 
 BEGIN_AS_NAMESPACE
 
-// Macros for doing endianess agnostic bitmask serialization
+// Macros for doing endianness agnostic bitmask serialization
 #define SAVE_TO_BIT(dst, val, bit) ((dst) |= ((val) << (bit)))
 #define LOAD_FROM_BIT(dst, val, bit) ((dst) = ((val) >> (bit)) & 1)
 
@@ -4699,7 +4699,7 @@ void asCWriter::WriteDataType(const asCDataType *dt)
 	if( t == ttIdentifier )
 		WriteTypeInfo(dt->GetTypeInfo());
 
-	// Endianess safe bitmask
+	// Endianness safe bitmask
 	char bits = 0;
 	SAVE_TO_BIT(bits, dt->IsObjectHandle(), 0);
 	SAVE_TO_BIT(bits, dt->IsHandleToConst(), 1);

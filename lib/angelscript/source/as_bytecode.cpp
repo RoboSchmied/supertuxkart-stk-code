@@ -2682,7 +2682,7 @@ int asCByteCode::InstrSHORT_B(asEBCInstr bc, short a, asBYTE b)
 	last->op       = bc;
 	last->wArg[0]  = a;
 
-	// We'll have to be careful to store the byte correctly, independent of endianess.
+	// We'll have to be careful to store the byte correctly, independent of endianness.
 	// Some optimizing compilers may change the order of operations, so we make sure
 	// the value is not overwritten even if that happens.
 	asBYTE *argPtr = (asBYTE*)ARG_DW(last->arg);
@@ -2710,7 +2710,7 @@ int asCByteCode::InstrSHORT_W(asEBCInstr bc, short a, asWORD b)
 	last->op       = bc;
 	last->wArg[0]  = a;
 
-	// We'll have to be careful to store the word correctly, independent of endianess.
+	// We'll have to be careful to store the word correctly, independent of endianness.
 	// Some optimizing compilers may change the order of operations, so we make sure
 	// the value is not overwritten even if that happens.
 	asWORD *argPtr = (asWORD*)ARG_DW(last->arg);

@@ -642,7 +642,7 @@ Changes in 1.7.3 (20.02.2012)
 
  - Fix crash in editbox when scrolling up with empty first lines caused by textwrapping.
 
- - Fix endianess conversions
+ - Fix endianness conversions
 
  - Changes to isPointInside
 
@@ -3023,7 +3023,7 @@ Changes in version 1.2 (29 Nov 2006)
 
 - VSync under Linux fixed and correctly working.
 
-- New os::Byteswap::byteswap methods which can be used for byteswapping (endianess correction) in mesh loaders and image loaders.
+- New os::Byteswap::byteswap methods which can be used for byteswapping (endianness correction) in mesh loaders and image loaders.
 
 - New video driver feature to check for multitexture feature.
 

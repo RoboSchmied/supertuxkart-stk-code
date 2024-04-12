@@ -250,7 +250,7 @@ AS_API asIScriptEngine *asCreateScriptEngine(asDWORD version)
 	asASSERT( sizeof(bool) == AS_SIZEOF_BOOL );
 	asASSERT( true == VALUE_OF_BOOLEAN_TRUE );
 
-	// Verify endianess
+	// Verify endianness
 #ifdef AS_BIG_ENDIAN
 	asDWORD dw = 0x00010203;
 	asQWORD qw = ((asQWORD(0x00010203)<<32)|asQWORD(0x04050607));

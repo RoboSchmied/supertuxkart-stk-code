@@ -105,7 +105,7 @@ struct asCExprValue
 	short stackOffset;
 
 private:
-	// These values must not be accessed directly in order to avoid problems with endianess. 
+	// These values must not be accessed directly in order to avoid problems with endianness. 
 	// Use the appropriate accessor methods instead
 	union
 	{
